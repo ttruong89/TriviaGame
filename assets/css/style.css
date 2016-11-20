@@ -1,0 +1,52 @@
+body {
+  background: #398b9b;
+  color: #000000;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.jumbotron {
+  box-sizing: border-box;
+  height: 600px;
+  background: #398b9b;
+}
+
+.main-button-container {
+  margin-top: 175px;
+  max-width: 610px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timer-p {
+  margin-top: 40px;
+}
+
+.answer:hover {
+  background: #b26ad1;
+}
+
+.answer {
+  padding-top: 7px;
+  height: 45px;
+  color: black;
+  padding-left: 14px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.img {
+  height: 300px;
+  width: 600px;
+}
+
+.first-answer {
+  margin-top: 40px;
+}
+
+.reset-button {
+  margin-top: 40px;
+}
+
+.summary-correct {
+  margin-top: 40px;
+}
