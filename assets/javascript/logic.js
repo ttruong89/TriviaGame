@@ -23,7 +23,7 @@ $("body").on("click", "#start-button", function(event){
 // Gameplay click events.  Generates wins/losses.
 $("body").on("click", ".answer", function(event){
 	clickSound.play();
-	selectedAnswer = $("body").text();
+	selectedAnswer = $(this).text();
 	// if player selects an answer that matches the index value of the current question/answer combo.
 	if(selectedAnswer === correctAnswers[questionCounter]) {
 		// correct answer will clear the clock and add 1 to wins and show pic.
@@ -62,7 +62,7 @@ function generateWin() {
 // This will generate a loss to the loss score if question is answered incorrectly.  Shows pic.
 function generateLoss() {
 	incorrectTally++;
-	gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Wrong! The correct answer is: "+ correctAnswers[questionCounter] + "</p>" + imageArray[questionCounter];
+	gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Wrong! The answer is: "+ correctAnswers[questionCounter] + "</p>" + imageArray[questionCounter];
 	$("#content").html(gameHTML);
 	setTimeout(wait, 3000);
 };
